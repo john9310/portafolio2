@@ -1,0 +1,50 @@
+<div class="formCrear">
+
+    <form [formGroup]="forma" (ngSubmit)="guardar()">
+    <h1>Crear Habilidad nueva</h1>
+
+    <label>Escriba un título</label>
+        <div class="input-group mb-3">
+            <input class="form-control"
+                type="text" 
+                placeholder="Título" 
+                formControlName="title">
+        </div>
+
+
+        
+
+        <div>
+          <img [src]="url" alt="">
+        </div>
+        <label >Seleccione Imagen</label>
+        <div class="input-group mb-5">
+    <input  type="file" 
+            class="form-control" 
+            accept=".jpg,.png"
+            (change)="subirImagen($event)">
+
+            
+</div>
+
+<ckeditor [editor]="Editor" 
+            [(ngModel)] = " model.editorData " 
+            (ready)="onReady($event)"
+            class="form-control"
+            formControlName="content"
+            id="editor"></ckeditor>
+
+<div class="form-group mt-3">
+    <div>
+      <button id="enviar" type="submit" class="btn btn-primary" (click)="imprimir()">
+        Enviar
+      </button>
+    </div>
+  </div>
+
+
+</form >
+</div>
+
+
+

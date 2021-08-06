@@ -1,0 +1,82 @@
+
+
+<!--
+
+    
+    
+    <div class="card " id="tarjeta">
+      <img [src]="items.image" class="card-img-top" >
+    
+      
+      <div>
+     
+      <div>
+        <h5>{{items.title}}</h5>
+      
+      </div>
+      
+      <div class="card-body" >
+        <p class="card-text"></p>
+        
+        
+        <div [innerHTML]="items.content"></div>
+      </div>
+
+
+      <div class="row" *ngIf="verOpciones===true">
+        <div class="col-md-12 text-center">
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example" >
+            <button type="button" class="btn btn-danger" (click)="borraHabilidad(items.id)"
+            [routerLink]="['habilidades']">Eliminar</button>
+            <button class="btn btn-primary" [routerLink]="['habilidades/editar',items.id]" 
+                    (click)="hideHabilidades()">Editar</button>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    </div>
+
+
+    -->
+
+
+
+
+      <div class="tarjeta-wrap">
+        <div class="tarjeta">
+        <div class="adelante"><img [src]="items.image" class="card-img-top" ></div>
+        <div class="atras">
+          <div>
+            <h5>{{items.title}}</h5>
+            <div [innerHTML]="items.content"></div>
+
+            <div class="row" *ngIf="verOpciones===true">
+              <div class="col-md-12 text-center">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example" >
+                  <button type="button" class="btn btn-danger" id="borrar" (click)="borraHabilidad(items.id)"
+                  [routerLink]="['habilidades']">Eliminar</button>
+                  <button class="btn btn-primary" id="editar" [routerLink]="['habilidades/editar',items.id]" 
+                          (click)="hideHabilidades()">Editar</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        </div>
+      </div>
+    
+   
+    
+    
+    
+
+    
+    
+
+      
+    
+      
+    

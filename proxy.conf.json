@@ -1,0 +1,19 @@
+{
+    "/v1/messages/*":{
+        "target":"http://ec2-52-14-157-172.us-east-2.compute.amazonaws.com",
+        "secure":false,
+        "ChangeOrigin":true
+    },
+
+    "/v1/skills/*":{
+        "target":"http://ec2-52-14-157-172.us-east-2.compute.amazonaws.com",
+        "secure":false,
+        "ChangeOrigin":true
+    },
+
+    "/v1/security/login/*":{
+        "target":"http://ec2-52-14-157-172.us-east-2.compute.amazonaws.com",
+        "secure":false,
+        "ChangeOrigin":true
+
+    }    }

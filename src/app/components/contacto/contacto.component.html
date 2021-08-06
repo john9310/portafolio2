@@ -1,0 +1,135 @@
+
+
+<div class="contacto">
+
+  <div class="padre_izquierdo">
+
+    <div class="cont_izquierdo">
+
+
+         <img src="../../../assets/contacto/oficina.jpg" class="imagen_fondo"> 
+    
+
+
+
+      
+
+
+
+     
+      
+        <img class="icono" src="../../../assets/contacto/icono_contacto.png" >
+
+        <h1>CONTACTAME</h1>
+     
+  
+
+
+
+    
+  
+    </div>
+  
+
+
+  </div>
+
+  
+  <div class="formulario">
+  
+  <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()" >
+  
+    <h2>Envía tu mensaje</h2>
+  
+      <div>
+          <div class="form-group row">
+          <div class="col">
+              <input class="form-control" input-box-shadow:
+               type="text"
+               placeholder="Nombre"
+               formControlName="name"
+               
+               >
+               <small *ngIf="nombreNoValido" class="text-danger">Digite solo letras (Minimo 3)</small>
+               <small *ngIf="nombreTocado" class="text-danger">Por favor Digite Nombre</small>
+               
+          </div>
+      </div>
+  
+      <!--Apellido-->
+      <div class="form-group row mt-3">
+          <div class="col">
+              <input class="form-control"
+               type="text"
+               placeholder="Apellido"
+               formControlName="lastname">
+               <small *ngIf="apellidoNoValido" class="text-danger">Digite solo letras (Minimo 3)</small>
+               <small *ngIf="apellidoTocado" class="text-danger">Por favor digite Apellido</small>
+          </div>
+      </div>
+  
+  <!--Correo-->
+      <div class="form-group row mt-3">
+        <div class="col">
+            <input class="form-control"
+             type="text"
+             placeholder="Correo Electrónico"
+             formControlName="email">
+             <small *ngIf="correoNoValido" class="text-danger">Por favor digite un correo valido</small>
+             <small *ngIf="correoTocado" class="text-danger">Por favor digite Correo</small>
+        </div>
+    </div>
+  
+  
+    <!-- Mensaje-->
+    <div class="form-group row mt-3">
+      <div class="col">
+        
+        
+          <textarea class="form-control"
+           type="text"
+           placeholder="Mensaje"
+           formControlName="content"></textarea>
+           <small *ngIf="mensajeTocado" class="text-danger">Por favor digite un mensaje</small>
+      </div>
+  </div>
+  
+  
+  
+  
+      </div>
+  
+      <div class="form-group mt-3">
+        <div class="col">
+          <button type="submit" class="btn btn-outline btn-block">
+            Enviar
+          </button>
+        </div>
+      </div>
+  
+  
+  
+    <!--
+  <hr>
+  <pre>
+    Estado del formulario: {{ forma.valid }}
+    <br>
+    Status: {{forma.status}}
+  </pre>
+  
+  <pre>
+    {{ forma.value | json }}
+  </pre>
+  
+  -->
+  
+  </form>
+  
+  </div>
+  
+  </div>
+  
+  
+  
+  
+  

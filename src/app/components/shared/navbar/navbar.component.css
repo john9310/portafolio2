@@ -1,0 +1,22 @@
+.navbar{
+    width:100%;
+    background: white;
+    margin: 0px auto;
+    margin-bottom: 2px;
+    
+}
+ul li a:hover{
+    color:#00952B;
+}
+
+
+.nombre{
+  
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 40px;
+
+    margin-right: 100px;
+    
+}

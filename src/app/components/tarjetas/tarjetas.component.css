@@ -1,0 +1,128 @@
+
+  /*  
+  
+  *{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border;
+    -moz-box-sizing: border;
+    box-sizing: border;
+  }
+  
+
+
+ 
+  .card{
+    margin: 15px;
+    border-color: darkgray;
+    border-style:inherit;
+    width: 25%;
+    border-radius: 5%;
+  
+     /* primer argumento: sombra horizontal
+        segundo argumento sombra vertical
+        tercer argumento: degradado
+        cuarto: tamaño o alcance de sombra
+        quinto: color
+        sexto: incrustado    inset
+       
+        box-shadow:0px 3px 2px 0px rgba(196,196,196,0.82);
+
+    float: left;
+
+
+    
+  }
+
+  .card div{
+    padding: 10px;
+  }
+  img{
+    width:100%;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    border-radius: 5% 5% 0% 0%;
+  }
+  
+  
+  h5{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    border-top: black;
+  }
+  
+  
+
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.tarjeta-wrap{
+  margin: 10px;
+  -webkit-perspective: 800;
+ 
+  
+}
+
+.tarjeta{
+  width: 280px;
+  height: 320px;
+  background: #f29720;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .8s ease;
+
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+
+}
+
+.adelante, .atras{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; /* funciona para ocultar la cara que ha girados*/
+}
+
+.atras{
+  transform: rotateY(180deg);
+
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+  font-family: "open sans";
+
+}
+
+.tarjeta-wrap:hover .tarjeta{  /* al pasar el mouse en tarjetawrap habra un efecto ej tarjeta*/
+  transform: rotateY(180deg); 
+
+
+}
+
+#borrar,#editar{
+
+  margin: 5px;
+  padding:0 5px
+}

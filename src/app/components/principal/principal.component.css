@@ -1,0 +1,127 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border;
+    -moz-box-sizing: border;
+    box-sizing: border;
+    
+  }
+
+body{
+    display: flex;
+}
+
+
+.contenedor{
+    width: 100%;
+    padding: 20px;
+    
+    
+}
+.dev{
+    
+    color: black;
+    position: relative;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+@keyframes escritura{
+    /* de 100% su ancho se vaya reduciendo hasta cero*/
+    from{
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+h1 h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: white;
+    border-left: 1px solid black;
+    /* steps en cuantos pasos se va a realizar la animación*/
+    animation: escritura 2s infinite alternate steps(23);
+}
+
+
+.soy{
+font-weight:normal;
+
+width: 100%;
+text-align: center;
+margin:5px
+}
+
+
+
+
+
+
+h3{
+   text-align: center;
+   margin-top: 20px;
+
+}
+h6{
+    text-align: center;
+    margin-top: 60px;
+    font-size:small;
+    font-weight:normal;
+    color: darkslategray;
+}
+.iconos{
+    text-align: center;
+
+}
+.i{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+img{
+    border-radius: 50%;
+    width: 200px; height: 200px;
+    align-items: center;
+    margin-bottom: 10pxs;
+    display:block;
+margin:auto;
+}
+
+
+.boton{
+    background: transparent;
+    border-style: grooves;
+}
+
+@media screen and (max-width:390px){
+
+    @keyframes escritura{
+        
+        from{
+            width: 0%;
+        }
+        to {
+            width: 0%;
+        }
+    }
+
+    h1 h1 span{
+        border-left: none;
+     
+    }
+
+    .dev{
+        margin-top: 10px;
+    }
+
+    h6{
+        margin-top: 30px;
+    }
+
+
+
+}

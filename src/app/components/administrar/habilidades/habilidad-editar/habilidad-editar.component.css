@@ -1,0 +1,16 @@
+img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.formEditar,form,.form-group  {
+    width: 100%;
+}
+
+.form-group #enviar{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}

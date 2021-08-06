@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+
+
+      <h1 class="nombre" >John</h1>
+
+      <button (click)="toggleCollapse()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" [class.show]="show">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" routerLink='/principal' routerLinkActive="router-link-active" >Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" routerLink='/acerca' routerLinkActive="router-link-active" >Acerca</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link active" aria-current="page" href="#" routerLink='/habilidades' routerLinkActive="router-link-active" >Habilidades</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link active" aria-current="page" href="#" routerLink='/contacto' routerLinkActive="router-link-active" >Contacto</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link active" aria-current="page" href="#" [routerLink]="['administrar']" routerLinkActive="router-link-active" >Administrar</a>
+          </li>
+
+
+          <li class="nav-item">
+            <!--<a class="nav-link" [routerLink]="['usuario',10]">Usuario</a> -->
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>

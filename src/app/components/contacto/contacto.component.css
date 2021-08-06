@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box
+    
+  }
+
+
+.contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    padding: 10px 20px;
+    
+}
+
+
+.padre_izquierdo{
+    width: 40%;
+    background-color: #245b58;
+    position: relative;
+}
+
+
+.cont_izquierdo{
+    width: 100%;
+   
+
+    
+}
+
+
+.imagen_fondo{
+    opacity: 0.1;
+    width: 100%;
+    height: fit-content;
+    background: #245b58;
+    
+   
+}
+
+
+
+
+
+
+.icono{
+    border-radius: 50%;
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+h1{
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 30%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+
+    .formulario{
+        width: 60%;
+        
+        
+
+    }
+
+
+    form{
+  
+        margin-top: 25px;
+   width: 100%;
+        margin-left: 25px;
+        margin-bottom: 20px;
+        padding-right: 20px;
+   
+       }
+
+textarea{
+    overflow-y: scroll;
+    resize: none;
+    height: 100px;
+}
+
+
+
+input{
+
+    width: 100%;
+}
+
+
+small{
+    margin-bottom: 0px;
+}
+
+button{
+    width: 100%;
+    border-color:#245b58;
+    color: #245b58 ;
+}
+
+
+input:focus{
+
+    box-shadow: 0px 0px 3px 2px #245b58;
+    border-color:#26615d ;
+}
+    
+textarea:focus{
+    box-shadow: 0px 0px 3px 2px #245b58;
+    border-color:#26615d ;
+
+}
+
+button:hover{
+    background: seagreen;
+    color: #ffffffff
+}
+
+@media screen and (max-width:800px){
+
+    h1{
+        font-size: 30px;
+    }
+
+
+}
+@media screen and (max-width:740px){
+
+    h1{
+        font-size: 25px;
+    }
+
+}
+@media screen and (max-width:650px){
+
+    h1{
+        font-size: 35px;
+       
+    }
+
+    .padre_izquierdo{
+        width: 100%;
+    }
+    .formulario{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:400px){
+
+    h1{
+        font-size: 25px;
+        
+    }
+
+
+}
+
+
