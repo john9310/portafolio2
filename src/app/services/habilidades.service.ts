@@ -11,7 +11,7 @@ export class HabilidadesService {
 
   constructor( private http: HttpClient) { }
 
-     private URL = `http://ec2-52-14-157-172.us-east-2.compute.amazonaws.com/v1/`;
+     private URL = `http://john-api.kevocde.co/v1/`;
 
   
   

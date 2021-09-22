@@ -20,7 +20,7 @@ export class LoginService {
 
 
 
-  private url="http://ec2-52-14-157-172.us-east-2.compute.amazonaws.com/v1/"
+  private url="http://john-api.kevocde.co/v1/"
 
   login( datos:LoginModel){
 

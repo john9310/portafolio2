@@ -14,7 +14,7 @@ export class ContactoService {
 
   postquery(query:string,message){
 
-    const url = `http://ec2-52-14-157-172.us-east-2.compute.amazonaws.com/v1/${query}`;
+    const url = `http://john-api.kevocde.co/v1/${query}`;
 
     const  headers = new HttpHeaders({
        'Authorization':'Bearer b9abd2d3-9b94-42fd-9906-a281c52dee3f'
